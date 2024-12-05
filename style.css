@@ -1,0 +1,281 @@
+/* Universal styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.gradient-text {
+    background: linear-gradient(#B90160, #2E3192);
+    background-clip: text;
+    color: transparent;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+header {
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul {
+    display: flex;
+    gap: 50px;
+}
+
+header a {
+    color: #737373;
+}
+
+header a:hover {
+    color: #B90160;
+    transform: scale(1.1);
+    display: block;
+}
+
+header img {
+    width: 150px;
+}
+
+/* Intro styles */
+.intro .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro .content {
+    width: 60%;
+}
+
+.intro img {
+    width: 40%;
+}
+
+.intro h1 {
+    font-size: 52px;
+}
+
+.intro a {
+    display: block;
+    margin-top: 20px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    padding: 10px 30px;
+    background: linear-gradient(to right, #B90160, #2E3192);
+    border-radius: 5px;
+}
+
+.intro a:hover {
+    width: 100px;
+    transform: scale(1.05);
+    background: linear-gradient(to left, #B90160, #2E3192);
+}
+
+/* Rugs styles */
+.rugs h2 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.rugs .rugs-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rugs .rug {
+    width: 30%;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.rugs img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.rugs h3 {
+    font-size: 26px;
+    margin: 10px 0;
+}
+
+.rugs p {
+    color: #737373;
+    line-height: 24px;
+}
+
+.rugs .content {
+    padding: 10px 25px;
+}
+
+/* Feedbacks styles */
+.feedbacks {
+    margin-top: 200px;
+    padding: 100px 10px;
+    background: linear-gradient(to right, #D4145A40, #2E319240);
+}
+
+.feedbacks .feedbacks-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedbacks .feedback {
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    padding: 70px 25px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.feedbacks img {
+    position: absolute;
+    left: 50%;
+    top: -90px;
+    transform: translate(-50%);
+    margin-left: -10px;
+}
+
+.feedbacks p {
+    text-align: center;
+    color: #737373;
+    line-height: 26px;
+}
+
+/* Footer styles */
+footer {
+    margin: 70px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container div {
+    width: 30%;
+}
+
+footer li {
+    margin-top: 10px;
+}
+
+footer a {
+    color: #737373;
+}
+
+footer p {
+    color: #737373;
+    line-height: 26px;
+}
+
+/* TABLETS STYLES */
+@media (max-width: 1199px) {
+    header ul {
+        display: none;
+    }
+
+    .rugs .rugs-box {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .rugs .rug {
+        width: 80%;
+    }
+
+    .rugs img {
+        height: 200px;
+    }
+
+    .feedbacks .feedbacks-box {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .feedbacks .feedback {
+        width: 80%;
+    }
+}
+
+/* MOBILE STYLES */
+@media (max-width: 767px) {
+    header {
+        margin-top: 10px;
+    }
+
+    header .container {
+        justify-content: center;
+    }
+
+    .intro {
+        padding-bottom: 30px;
+        background-image: url("./images/intro-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .intro img {
+        display: none;
+    }
+
+    .intro .content {
+        width: 100%;
+    }
+
+    .intro h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .intro a {
+        margin: 0 auto;
+    }
+
+    .rugs h2 {
+        font-size: 28px;
+    }
+
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .container div {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer p {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
